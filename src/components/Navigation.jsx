@@ -31,6 +31,7 @@ const Avatar = styled.img`
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+    object-position: center 30%;
 `;
 
 const LogoText = styled(motion.div)`
