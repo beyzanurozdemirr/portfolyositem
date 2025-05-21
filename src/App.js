@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #f5f5dc; 
+    background: #f5f5dc !important;
   }
 
   ::-webkit-scrollbar {
@@ -24,35 +24,58 @@ const GlobalStyle = createGlobalStyle`
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(144, 238, 144, 0.1);
+    background: rgba(144, 238, 144, 0.1) !important;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #a67c52; 
+    background: #a67c52 !important;
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #8c644b; 
+    background: #8c644b !important;
   }
-  
+
   section {
     min-height: 100vh;
     padding: 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-      
+    background: inherit !important;
+  }
+
+  /* Responsive kısımlarda renk değişimini engellemek için */
+  @media (max-width: 768px) {
+    body {
+      background: #f5f5dc !important;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(144, 238, 144, 0.1) !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #a67c52 !important;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8c644b !important;
+    }
+
+    section {
+      background: inherit !important;
+    }
   }
 `;
 
 function App() {
-  return (
-      <>
-        <GlobalStyle />
-        <Layout />
-      </>
-  );
+    return (
+        <>
+            <GlobalStyle />
+            <Layout />
+        </>
+    );
 }
 
 export default App;

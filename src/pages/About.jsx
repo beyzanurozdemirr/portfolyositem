@@ -195,6 +195,7 @@ const SkillCard = styled(motion.div)`
 
     svg {
       font-size: 3rem;
+      color: #8fbc8f; /* Added for consistency on responsive */
     }
   }
 
@@ -204,6 +205,7 @@ const SkillCard = styled(motion.div)`
 
     svg {
       font-size: 2.8rem;
+      color: #8fbc8f; /* Added for consistency on responsive */
     }
   }
 `;
@@ -220,10 +222,12 @@ const SkillName = styled.h3`
 
   @media (max-width: 768px) {
     font-size: 1.2rem;
+    color: #4a3b31; /* Added for consistency on responsive */
   }
 
   @media (max-width: 480px) {
     font-size: 1.1rem;
+    color: #4a3b31; /* Added for consistency on responsive */
   }
 `;
 
@@ -381,7 +385,7 @@ const About = () => {
                             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
                             viewport={sectionViewport}
                         >
-                            {skill.icon}
+                            {skill.icon} {/* This will be undefined as skill data doesn't contain icons */}
                             <SkillName>{skill.name}</SkillName>
                             <SkillLevel progress={skill.level} />
                         </SkillCard>

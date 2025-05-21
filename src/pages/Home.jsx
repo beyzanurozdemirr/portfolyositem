@@ -26,6 +26,16 @@ const Title = styled(motion.h1)`
 
     @media (max-width: 768px) {
         font-size: 2.5rem;
+        background: linear-gradient(45deg, #a67c52, #8fbc8f); /* Consistent color */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2rem;
+        background: linear-gradient(45deg, #a67c52, #8fbc8f); /* Consistent color */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 `;
 
@@ -36,6 +46,12 @@ const Subtitle = styled(motion.h2)`
 
     @media (max-width: 768px) {
         font-size: 1.2rem;
+        color: #4a3b31; /* Consistent color */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+        color: #4a3b31; /* Consistent color */
     }
 `;
 
@@ -47,6 +63,12 @@ const Description = styled(motion.p)`
 
     @media (max-width: 768px) {
         font-size: 1rem;
+        color: #4a3b31; /* Consistent color */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 0.9rem;
+        color: #4a3b31; /* Consistent color */
     }
 `;
 
@@ -64,6 +86,16 @@ const IconLink = styled.a`
     &:hover {
         color: #6b8e23;
         transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.8rem;
+        color: #4a3b31; /* Consistent color */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+        color: #4a3b31; /* Consistent color */
     }
 `;
 

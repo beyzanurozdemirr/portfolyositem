@@ -54,11 +54,17 @@ const Title = styled(motion.h2)`
   @media (max-width: 768px) {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    background: linear-gradient(45deg, #a67c52, #8fbc8f); /* Consistent color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @media (max-width: 480px) {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #a67c52, #8fbc8f); /* Consistent color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 
@@ -118,6 +124,12 @@ const ProjectTitle = styled.h3`
 
   @media (max-width: 768px) {
     font-size: 1.3rem;
+    color: #556b2f; /* Consistent color */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+    color: #556b2f; /* Consistent color */
   }
 `;
 
@@ -130,6 +142,13 @@ const ProjectDescription = styled.p`
   @media (max-width: 768px) {
     font-size: 0.95rem;
     line-height: 1.5;
+    color: #4a3b31; /* Consistent color */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #4a3b31; /* Consistent color */
   }
 `;
 
@@ -157,6 +176,13 @@ const TechTag = styled(motion.span)`
   @media (max-width: 768px) {
     font-size: 0.8rem;
     padding: 0.3rem 0.6rem;
+    color: #556b2f; /* Consistent color */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+    color: #556b2f; /* Consistent color */
   }
 `;
 
@@ -187,6 +213,13 @@ const ProjectLink = styled(motion.a)`
   @media (max-width: 768px) {
     font-size: 0.9rem;
     padding: 0.4rem 0.8rem;
+    color: #556b2f; /* Consistent color */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    color: #556b2f; /* Consistent color */
   }
 `;
 
@@ -211,6 +244,13 @@ const ShowMoreButton = styled(motion.button)`
   @media (max-width: 768px) {
     font-size: 0.9rem;
     padding: 0.6rem 1.5rem;
+    color: #a67c52; /* Consistent color */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.2rem;
+    color: #a67c52; /* Consistent color */
   }
 `;
 

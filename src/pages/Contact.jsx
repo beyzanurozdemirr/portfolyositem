@@ -49,7 +49,6 @@ const InfoText = styled(motion.p)`
     @media (max-width: 768px) {
         font-size: 1rem;
         line-height: 1.6;
-        margin-bottom: 2rem;
     }
 `;
 
@@ -120,8 +119,35 @@ const SocialLink = styled(motion.a)`
     @media (max-width: 768px) {
         font-size: 1rem;
         padding: 0.8rem 1.2rem;
+        color: #556b2f; /* Maintain consistent color */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+        color: #556b2f; /* Maintain consistent color */
     }
 `;
+
+const ContactInfoText = styled.p`
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    color: #4a3b31;
+    margin-bottom: 1rem;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+        color: #4a3b31; /* Maintain consistent color */
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1rem;
+        color: #4a3b31; /* Maintain consistent color */
+    }
+`;
+
 
 const Contact = () => {
     const containerVariants = {
@@ -211,12 +237,12 @@ const Contact = () => {
 
                 <Card variants={itemVariants}>
                     <h3 style={{ color: '#4a3b31', marginBottom: '1.5rem' }}>İletişim Bilgileri</h3>
-                    <p style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.1rem', color: '#4a3b31', marginBottom: '1rem' }}>
+                    <ContactInfoText>
                         <FaEnvelope /> beyzanurozdemir2100@gmail.com
-                    </p>
-                    <p style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1.1rem', color: '#4a3b31' }}>
+                    </ContactInfoText>
+                    <ContactInfoText>
                         <FaPhone /> +90 545 943 51 11
-                    </p>
+                    </ContactInfoText>
                 </Card>
             </BottomContentWrapper>
         </ContactContainer>
